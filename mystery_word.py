@@ -1,12 +1,14 @@
 import random
 import re
 
-def easy_words(word_list):
+main_list=open("/usr/share/dict/words")
+game_words=main_list.lower().split().read()
+
     """
     Returns a filtered version of the word list with words only containing
     4-6 characters.
     """
-
+def easy_words(word_list):
 
     # TODO
     pass
@@ -62,10 +64,9 @@ def is_word_complete(word, guesses):
     pass
 
 
-def main():
+
     """
     Runs when the program is called from the command-line.
-
     1. Prompts the user for a difficulty level
     2. Sets up the game based upon the difficulty level
     3. Performs the game loop, consisting of:
@@ -76,7 +77,7 @@ def main():
     4. Finishing the game and displaying whether the user has won or lost
     5. Giving the user the option to play again
     """
-    # TODO
+def main():
 
 
 if __name__ == '__main__':
