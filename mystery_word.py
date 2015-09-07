@@ -1,9 +1,13 @@
+import random
+import re
 
 def easy_words(word_list):
     """
     Returns a filtered version of the word list with words only containing
     4-6 characters.
     """
+
+
     # TODO
     pass
 
