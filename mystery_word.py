@@ -9,6 +9,11 @@ game_words=main_list.lower().split().read()
     4-6 characters.
     """
 def easy_words(word_list):
+easy_words_list=[]
+    if len(word) in word_list is >=4 and len(word) =<6:
+        easy_words_list.append(word)
+    return word_list
+
 
     # TODO
     pass
