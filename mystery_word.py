@@ -11,7 +11,7 @@ game_words=game_words.lower().split()
 """
 def easy_words(word_list):
     easy_words_list=[]
-    if len(word) in word_list >= 4 and len(word) <= 6:
+    if len(word) in word_list >= 4 and len(word) in word_list <= 6:
         easy_words_list.append(word)
     return easy_words_list
 
@@ -27,7 +27,7 @@ def easy_words(word_list):
 
 def medium_words(word_list):
     medium_words_list=[]
-    if len(word) in word_list >= 6 and len(word) <= 8:
+    if len(word) in word_list >= 6 and len(word) in word_list <= 8:
         medium_words_list.append(word)
     return medium_words_list
     pass
@@ -93,7 +93,7 @@ def is_word_complete(word, guesses):
             return False
 
 def level():
-    level == input("which level would you like to try? Pick: easy, medium, or hard.")
+    level = input("which level would you like to try? Pick: easy, medium, or hard.")
     if level =='easy':
         game_word=random_word(easy_words(game_words))
     if level =='medium':
@@ -101,7 +101,8 @@ def level():
     if level =='hard':
         game_word=random_word(hard_words(game_words))
 
-
+def game_loop():
+    
     pass
 
 
@@ -120,6 +121,6 @@ def level():
     """
 def main():
 
-print
+    print
 if __name__ == '__main__':
             main()
