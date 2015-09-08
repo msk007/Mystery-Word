@@ -86,7 +86,11 @@ def display_word(word, guesses):
     otherwise returns False.
     """
 def is_word_complete(word, guesses):
-
+    for letter in word:
+        if letter in word:
+            return True
+        else:
+            return False
 
 
     pass
