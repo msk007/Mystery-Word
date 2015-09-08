@@ -75,7 +75,7 @@ def display_word(word, guesses):
             display= letter
         else:
             display='_'
-        if 
+        return display
     pass
 
 
