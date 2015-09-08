@@ -102,7 +102,9 @@ def level():
         game_word=random_word(hard_words(game_words))
 
 def game_loop():
-    
+    guesses=[]
+    chances=10
+    print("your word has {} letters in it!".format(len(game_word)))
     pass
 
 
