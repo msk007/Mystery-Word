@@ -50,15 +50,14 @@ def hard_words(word_list):
     pass
 
 
-def random_word(word_list):
     """
     Returns a random word from the word list.
     """
-    # TODO
+def random_word(word_list):
+    return random.choice(word_list)
     pass
 
 
-def display_word(word, guesses):
     """
     Returns a string that including blanks (_) and letters from the given word,
     filling in letters based upon the list of guesses.
@@ -69,16 +68,27 @@ def display_word(word, guesses):
     For example, if the word is BOMBARD and the letters guessed are a, b,
     and d, this function should return 'B _ _ B A _ D'.
     """
-    # TODO
+def display_word(word, guesses):
+    display= ''
+    for letter in word:
+        if letter in guesses:
+            display= letter
+        else:
+            display='_'
+        if 
     pass
 
 
-def is_word_complete(word, guesses):
+
+
     """
     Returns True if the list of guesses covers every letter in the word,
     otherwise returns False.
     """
-    # TODO
+def is_word_complete(word, guesses):
+
+
+
     pass
 
 
