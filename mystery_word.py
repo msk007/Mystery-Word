@@ -72,7 +72,7 @@ def display_word(word, guesses):
     display= ''
     for letter in word:
         if letter in guesses:
-            display= letter
+            display.append(letter)
         else:
             display='_'
         return display
@@ -110,7 +110,13 @@ def is_word_complete(word, guesses):
     5. Giving the user the option to play again
     """
 def main():
-
+    level=input("which level would you like to try? Pick: easy, medium, or hard.")
+if level ='easy':
+    game_word=random_word(easy_words(game_words))
+if level ='medium':
+    game_word=random_word(medium_words(game_words))
+if level ='hard':
+    game_word=random_word(hard_words(game_words))
 
         if __name__ == '__main__':
             main()
