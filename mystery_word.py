@@ -19,12 +19,16 @@ easy_words_list=[]
     pass
 
 
-def medium_words(word_list):
     """
     Returns a filtered version of the word list with words only containing
     6-8 characters.
     """
-    # TODO
+
+def medium_words(word_list):
+medium_words_list=[]
+        if len(word) in word_list is >=6 and len(word) =<8:
+            medium_words_list.append(word)
+        return word_list
     pass
 
 
