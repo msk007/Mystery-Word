@@ -2,17 +2,18 @@ import random
 import re
 
 main_list=open("/usr/share/dict/words")
-game_words=main_list.lower().split().read()
+game_words=main_list.read()
+game_words=game_words.lower().split()
 
-    """
+"""
     Returns a filtered version of the word list with words only containing
     4-6 characters.
-    """
+"""
 def easy_words(word_list):
-easy_words_list=[]
-    if len(word) in word_list is >=4 and len(word) =<6:
+    easy_words_list=[]
+    if len(word) in word_list >= 4 and len(word) <= 6:
         easy_words_list.append(word)
-    return word_list
+    return easy_words_list
 
 
     # TODO
@@ -25,18 +26,26 @@ easy_words_list=[]
     """
 
 def medium_words(word_list):
-medium_words_list=[]
-        if len(word) in word_list is >=6 and len(word) =<8:
-            medium_words_list.append(word)
-        return word_list
+    medium_words_list=[]
+    if len(word) in word_list >= 6 and len(word) <= 8:
+        medium_words_list.append(word)
+    return medium_words_list
     pass
 
 
-def hard_words(word_list):
+
     """
     Returns a filtered version of the word list with words only containing
     8+ characters.
     """
+
+def hard_words(word_list):
+    hard_words_list=[]
+    if len(word) in word_list  >=8:
+        hard_words_list.append(word)
+    return hard_words_list
+
+
     # TODO
     pass
 
@@ -89,5 +98,5 @@ def is_word_complete(word, guesses):
 def main():
 
 
-if __name__ == '__main__':
-    main()
+        if __name__ == '__main__':
+            main()
