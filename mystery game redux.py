@@ -5,13 +5,16 @@ main_list=open("/usr/share/dict/words")
 game_words=main_list.read()
 game_words=game_words.lower().split()
 
+def lists_of_length(word_list, min, max=):
+  filtered word list=[]
 """
     Returns a filtered version of the word list with words only containing
     4-6 characters.
 """
 def easy_words(word_list):
     easy_words_list=[]
-    if len(word) in word_list >= 4 and len(word) <= 6:
+    for word in word_list
+      if len(word) >= min and len(word) <= max:
         easy_words_list.append(word)
     return easy_words_list
 
@@ -69,13 +72,14 @@ def random_word(word_list):
     and d, this function should return 'B _ _ B A _ D'.
     """
 def display_word(word, guesses):
-    display= ''
+    display= []
+    word = word.lower()
     for letter in word:
         if letter in guesses:
-            display.append(letter)
+            display.append(letter.upper())
         else:
-            display='_'
-        return display
+            display.append('_')
+    return ' '.join(display)
     pass
 
 
@@ -87,10 +91,10 @@ def display_word(word, guesses):
     """
 def is_word_complete(word, guesses):
     for letter in word:
-        if letter in word:
-            return True
-        else:
+        if letter not in guesses:
             return False
+
+        return True
 
 def level():
     level = input("which level would you like to try? Pick: easy, medium, or hard.")
